@@ -20,11 +20,11 @@ def is_integer(input_str): # To check if users input an integer
 check = False # A Flag variable to ensure that user inputs a positive integer
 
 while not check:
-    no_of_trials = (input("So, how many times do you want to estimate it (Recommended: 7) "))
+    no_of_trials = (input("So, how many times do you want to estimate it (Recommended: 7) ")) # Ask for user input on how many trials to do
 
-    if  is_integer(no_of_trials):
-        if int(no_of_trials) > 0:
-            check = True
+    if  is_integer(no_of_trials): # Check if it's an integer
+        if int(no_of_trials) > 0: # Check if it's positive
+            check = True # If it's a positive integer, can break out of loop
         else: 
                 print("Invalid input. Please enter positive integers")
     else:
