@@ -22,8 +22,8 @@ check = False # A Flag variable to ensure that user inputs a positive integer
 while not check:
     no_of_trials = (input("So, how many times do you want to estimate it (Recommended: 7) ")) # Ask for user input on how many trials to do
 
-    if  is_integer(no_of_trials): # Check if it's an integer
-        if int(no_of_trials) > 0: # Check if it's positive
+    if  is_integer(no_of_trials): # Check if it's an integer (Type Check)
+        if int(no_of_trials) > 0: # Check if it's positive (Range Check)
             check = True # If it's a positive integer, can break out of loop
         else: 
                 print("Invalid input. Please enter positive integers")
