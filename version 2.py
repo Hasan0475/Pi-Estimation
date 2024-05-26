@@ -59,6 +59,6 @@ percentage_error = abs((estimated_area - actual_area) / actual_area) * 100
 
 print("Number of times in circle is", pts_in_circle)
 print("Number of times out of circle is", int(no_of_points) - pts_in_circle)
-print(f"Actual Area of circle is {estimated_area:.3f}")
+print(f"Estimated Area of circle is {estimated_area:.3f}")
 print(f"Actual Area of circle is {actual_area:.3f}")
 print(f"Percentage error is: {percentage_error:.3f}%")
